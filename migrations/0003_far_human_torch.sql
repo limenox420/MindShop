@@ -1,0 +1,1 @@
+ALTER TABLE `product` ADD `pay_method` text;

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "mindshop",
+  "main": "src/server/index.ts",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./dist/client",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "mindshop",
+      "database_id": "placeholder-create-with-wrangler-d1-create"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "mindshop"
+    }
+  ],
+  "vars": {
+    "APP_NAME": "MindShop",
+    "APP_URL": "http://localhost:8787"
+  }
+}

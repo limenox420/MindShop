@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+}
+
+header nav::-webkit-scrollbar {
+  display: none;
+}
+header nav {
+  scrollbar-width: none;
+}
